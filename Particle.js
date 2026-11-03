@@ -14,9 +14,9 @@ class Particle {
 
   update() {
     this.vel.add(this.acc);
-    this.pos.add(this.vel);
+    this.pos.add(this.vel); //=> 위치,속도,가속도로 움직임을 만들겠다.
 
-    this.acc.set(0, 0);
+    this.acc.set(0, 0); //=>
     this.checkEdge();
   }
 
