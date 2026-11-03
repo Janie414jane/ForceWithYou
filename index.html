@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <script src="/p5.js"></script>
+<html lang="ko"><head>
+    <title>차근차근 주차 연습</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./p5.js"></script>
     
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
 
   </head>
   <body>
+    <main>
+      <header><p class="eyebrow">PARKING PRACTICE</p><h1>차근차근 주차 연습</h1><p>천천히 방향을 맞추고, 초록색 구역에 주차해 보세요.</p></header>
+      <section class="dashboard" aria-label="주행 정보"><span id="speed">속도 0</span><span id="gear">정차</span><span id="hits">충돌 0회</span></section>
+      <div id="game" aria-label="방향키로 조작하는 주차 시뮬레이션"></div>
+      <p id="status" role="status">초록색 주차 구역으로 이동하세요.</p>
+      <footer><p>↑ 전진 · ↓ 브레이크 / 후진 · ← → 조향 · Space 정지 · R 다시 시작</p><button id="restart" type="button">다시 시작 ↻</button></footer>
+    </main>
     <script src="Particle.js"></script>
     <script src="sketch.js"></script>
   

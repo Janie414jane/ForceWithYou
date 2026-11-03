@@ -1,7 +1,13 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
-canvas {
-  display: block;
-}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 36px 20px; background: #101b26; color: #edf5fc; font-family: system-ui, sans-serif; }
+main { max-width: 800px; margin: auto; }
+.eyebrow { color: #70e1ae; font-size: 12px; font-weight: 700; letter-spacing: 3px; }
+h1 { margin: 8px 0; font-size: clamp(24px, 5vw, 36px); }
+header > p:last-child, footer p { color: #a7b9c9; font-size: 14px; line-height: 1.7; }
+.dashboard { display: flex; justify-content: space-between; gap: 12px; padding: 18px 20px; margin-top: 26px; background: #293b4b; border-radius: 12px 12px 0 0; font-weight: 600; font-size: 14px; }
+canvas { display: block; max-width: 100%; height: auto !important; border-radius: 0 0 12px 12px; }
+#status { min-height: 48px; padding: 14px 18px; border-radius: 8px; background: #203b35; color: #a0f0cd; font-size: 14px; }
+footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+button { background: #70e1ae; color: #102b23; border: 0; border-radius: 8px; padding: 12px 18px; font: inherit; font-weight: 700; cursor: pointer; }
+button:hover { background: #a0f0cd; }
+button:focus-visible { outline: 3px solid white; outline-offset: 4px; }
